@@ -6,12 +6,11 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.*;
 
-public class searchLessonPage {
+public class SearchLessonPage {
     @Test
-    void openPageFromHover ()
-    {
+    void openPageFromHover() {
         Configuration.holdBrowserOpen = true;
-        Configuration.browserSize="1920x1080";
+        Configuration.browserSize = "1920x1080";
 
         //Открыть страницу Github
         open("https://github.com/");
@@ -25,11 +24,11 @@ public class searchLessonPage {
         $("h1").shouldHave(Condition.text("Build like the best"));
 
     }
+
     @Test
-    void useDrugAndDrop()
-    {
+    void useDrugAndDrop() {
         Configuration.holdBrowserOpen = true;
-        Configuration.browserSize="1920x1080";
+        Configuration.browserSize = "1920x1080";
 
         //Открыть страницу drag and drop
         open("https://the-internet.herokuapp.com/drag_and_drop");
